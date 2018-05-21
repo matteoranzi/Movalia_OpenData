@@ -17,13 +17,6 @@ class CarParking
     private $lat;
     private $lng;
 
-    /**
-     * CarParking constructor.
-     * @param integer $ID
-     */
-    public function __construct($ID){
-        $this->ID = $ID;
-    }
 
     /**
      * @return string
@@ -39,6 +32,13 @@ class CarParking
     public function setName($name)
     {
         $this->name = $name;
+    }
+
+    /**
+     * @param integer $ID
+     */
+    public function setID($ID){
+        $this->ID = $ID;
     }
 
     /**
