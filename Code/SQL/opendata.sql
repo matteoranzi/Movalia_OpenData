@@ -28,6 +28,7 @@ USE `opendata`;
 
 --
 -- Struttura della tabella `bikesharingtrento`
+-- Struct of `bikesharingtrento` table
 --
 
 CREATE TABLE `bikesharingtrento` (
@@ -46,6 +47,7 @@ CREATE TABLE `bikesharingtrento` (
 
 --
 -- Struttura della tabella `carparkingtorino`
+-- Struct of `carparkingtorino` table
 --
 
 CREATE TABLE `carparkingtorino` (
@@ -62,32 +64,38 @@ CREATE TABLE `carparkingtorino` (
 
 --
 -- Indici per le tabelle scaricate
+-- Index for downloaded tables
 --
 
 --
 -- Indici per le tabelle `bikesharingtrento`
+-- Index for `bikesharingtrento` tables
 --
 ALTER TABLE `bikesharingtrento`
   ADD PRIMARY KEY (`pk`);
 
 --
 -- Indici per le tabelle `carparkingtorino`
+-- Index for `carparkingtorino` tables
 --
 ALTER TABLE `carparkingtorino`
   ADD PRIMARY KEY (`pk`);
 
 --
 -- AUTO_INCREMENT per le tabelle scaricate
+-- AUTO_INCREMENT for downloaded tables
 --
 
 --
 -- AUTO_INCREMENT per la tabella `bikesharingtrento`
+-- AUTO_INCREMENT for `bikesharingtrento` table
 --
 ALTER TABLE `bikesharingtrento`
   MODIFY `pk` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT per la tabella `carparkingtorino`
+-- AUTO_INCREMENT for `carparkingtorino`table
 --
 ALTER TABLE `carparkingtorino`
   MODIFY `pk` int(11) NOT NULL AUTO_INCREMENT;
