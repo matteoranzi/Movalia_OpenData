@@ -48,7 +48,7 @@ class DatabaseManagement {
        global $connection;
        foreach ($array as $row)
        {
-           $query = "INSERT INTO `carparkingtrento` (`pk`, `name`, `id`, `stat`, `total`, 'free', 'tendence', `lat`, `lng`) VALUES (NULL, '" . $row->getName() . "', '" . $row->getID() . "', '" . $row->getStatus() . "', '" . $row->getTotal() . "', '" . $row->getFree() . "', '" . $row->getTendence() . "', '" . $row->getLat() . "', '" . $row->getLng() . "')";
+           $query = "INSERT INTO `carparkingtorino` (`pk`, `name`, `id`, `stat`, `total`, `free`, `tendence`, `lat`, `lng`) VALUES (NULL, '" . $row->getName() . "', '" . $row->getID() . "', '" . $row->getStatus() . "', '" . $row->getTotal() . "', '" . $row->getFree() . "', '" . $row->getTendence() . "', '" . $row->getLat() . "', '" . $row->getLng() . "')";
            mysqli_query($connection, $query);
        }
    }
@@ -102,7 +102,7 @@ class DatabaseManagement {
            echo "<td> pk: " . $row['pk'] . "</td>";
            echo "<td> id: " . $row['id'] . "</td>";
            echo "<td> name: " . $row['name'] . "</td>";
-           echo "<td> status: " . $row['status'] . "</td>";
+           echo "<td> status: " . $row['stat'] . "</td>";
            echo "<td> total: " . $row['total'] . "</td>";
            echo "<td> free: " . $row['free'] . "</td>";
            echo "<td> tendence: " . $row['tendence'] . "</td>";
