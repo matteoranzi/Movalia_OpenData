@@ -1,11 +1,16 @@
 <?php
 
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
 /**
  * Description of DatabaseManagement
  *
  * @author LORENZO.ORSINGHER
  */
-
 class DatabaseManagement {
     
     private $connection;
@@ -26,7 +31,7 @@ class DatabaseManagement {
    function addBikeSharing($array)
    {
        global $connection;
-       foreach ($array as $row)
+       foreach ($array as $row) //cycle for each element of the array
        {
            $query = "INSERT INTO `bikesharingtrento` (`pk`, `name`, `address`, `id`, `bikes`, `free`, `total`, `lat`, `lng`) VALUES (NULL, '" . $row->getName() . "', '" . $row->getAddress() . "', '" . $row->getID() . "', '" . $row->getBikes() . "', '" . $row->getSlots() . "', '" . $row->getTotalSlots() . "', '" . $row->getLatitude() . "', '" . $row->getLongitude() . "')";
            mysqli_query($connection, $query);
