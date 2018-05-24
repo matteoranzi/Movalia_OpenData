@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#5 times every minute
+#every 5 minutes
 FREQUENCY=5;
 
 interpreter="/usr/bin/php"
